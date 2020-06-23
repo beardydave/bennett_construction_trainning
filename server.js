@@ -2,10 +2,17 @@ const express = require("express");
 const ejs = require("ejs");
 const port = 3000;
 
+// --- Page Title --- //
 const homeTitle = "Vern Construction Trainning";
 const trainningTitle = "Trainning";
 const aboutTitle = "About";
 const contactTitle = "Contact";
+
+// --- Page Icons --- //
+const homeIcon = "icofont-workers-group";
+const trainningIcon = "icofont-vehicle-excavator";
+const aboutIcon = "icofont-engineer";
+const contactIcon = "icofont-phone";
 
 const app = express();
 
@@ -16,24 +23,28 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("home", {
     pageTitle: homeTitle,
+    pageIcon: homeIcon,
   });
 });
 
 app.get("/trainning", (req, res) => {
   res.render("trainning", {
     pageTitle: trainningTitle,
+    pageIcon: trainningIcon,
   });
 });
 
 app.get("/about", (req, res) => {
   res.render("about", {
     pageTitle: aboutTitle,
+    pageIcon: aboutIcon,
   });
 });
 
 app.get("/contact", (req, res) => {
   res.render("contact", {
     pageTitle: contactTitle,
+    pageIcon: contactIcon,
   });
 });
 
