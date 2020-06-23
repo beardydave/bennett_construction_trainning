@@ -21,7 +21,7 @@
     position: fixed;
     top: 6.5rem;
     right: 6.5rem;
-    background-color: cadetblue;
+    background-color: #3b6978;
     z-index: 1000;
     transition: transform 0.8s ease-in-out;
   }
@@ -39,7 +39,7 @@
     transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .navigation__list {
-    transform: translateY(-7rem);
+    transform: translateY(-5rem);
     list-style: none;
     text-align: center;
   }
@@ -119,8 +119,8 @@
     }
     .navigation__background {
       transform: scale(.7);
-      top: 3.25rem;
-      right: 3.25rem;
+      top: 3.3rem;
+      right: 3.3rem;
     }
   }
 
@@ -145,8 +145,8 @@
     font-size: 4rem;
     text-align: center;
 }
+.icofont-vehicle-crane,
 .icofont-vehicle-excavator,
-.icofont-workers-group,
 .icofont-engineer,
 .icofont-phone {
   font-size: 6rem;
@@ -165,4 +165,18 @@
     height: 100%;
     width: 100vw;
     object-fit: cover;
+}
+
+@media(max-width: 400px){
+    .main-title {
+      font-size: 3rem;
+    }
+    .navigation__button {
+      top: 2rem;
+      right: 2rem;
+    }
+    .navigation__background {
+      top: 2.3rem;
+      right: 2.3rem;
+    }
 }

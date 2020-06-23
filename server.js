@@ -9,7 +9,7 @@ const aboutTitle = "About";
 const contactTitle = "Contact";
 
 // --- Page Icons --- //
-const homeIcon = "icofont-workers-group";
+const homeIcon = "icofont-vehicle-crane";
 const trainningIcon = "icofont-vehicle-excavator";
 const aboutIcon = "icofont-engineer";
 const contactIcon = "icofont-phone";
