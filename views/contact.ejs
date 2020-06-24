@@ -1,6 +1,13 @@
-<%- include("partials/header") -%>
-<%- include("partials/nav") -%>
+<%- include("partials/header") -%> <%- include("partials/nav") -%>
+<link rel="stylesheet" href="/css/contactStyle.css" />
 
+<div class="contact-card">
+  <form action="">
+    <label for="name">Your name</label><input class="contact-input" id="name" type="text" />
+    <label for="email">Your email</label><input class="contact-input" id="email" type="email" /></br>
+    <label for="message">Your message</label><input class="contact-input" id="message" type="text" /></br>
+    <button class="btn-send">Send Message</button>
+  </form>
+</div>
 
-<%- include("partials/scripts") -%>
-<%- include("partials/footer") -%>
+<%- include("partials/scripts") -%> <%- include("partials/footer") -%>

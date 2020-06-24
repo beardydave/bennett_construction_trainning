@@ -3,14 +3,14 @@ const ejs = require("ejs");
 const port = 3000;
 
 // --- Page Title --- //
-const homeTitle = "Vern Construction Trainning";
-const trainningTitle = "Trainning";
+const homeTitle = "Vern Construction Training";
+const trainingTitle = "Training";
 const aboutTitle = "About";
 const contactTitle = "Contact";
 
 // --- Page Icons --- //
 const homeIcon = "icofont-vehicle-crane";
-const trainningIcon = "icofont-vehicle-excavator";
+const trainingIcon = "icofont-vehicle-excavator";
 const aboutIcon = "icofont-engineer";
 const contactIcon = "icofont-phone";
 
@@ -29,8 +29,8 @@ app.get("/", (req, res) => {
 
 app.get("/trainning", (req, res) => {
   res.render("trainning", {
-    pageTitle: trainningTitle,
-    pageIcon: trainningIcon,
+    pageTitle: trainingTitle,
+    pageIcon: trainingIcon,
   });
 });
 
