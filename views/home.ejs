@@ -1,46 +1,42 @@
-<%- include("partials/header") -%> <%- include("partials/nav") -%>
-<link rel="stylesheet" href="/css/homeStyle.css" />
+<%- include("partials/header") -%> <%- include("partials/nav") -%> <%-
+include("partials/title") -%>
 
-<section class="feature__section">
-  <h2 class="feature__title">Courses</h2>
-  <p class="feature__subtitle">On-site training courses provided</p>
-  <div class="features">
-    <div class="feature__item">
-      <i class="icon icofont-calculations"></i>
-      <h3 class="feature__heading">Course 1</h3>
-      <p class="feature__text">
+<section class="features">
+  <h2 class="features__title">On-site Training Courses</h2>
+  <p class="features__subtitle">
+    I can deliver expert, on-site training in the following areas.
+  </p>
+  <div class="features__container">
+    <div class="features__item">
+      <img class="features__logo features__logo-npors" src="/img/npors-logo.png" alt="npors-logo" />
+      <h3 class="features__heading">NPORS Scheme</h3>
+      <p class="features__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
         dolores id omnis officiis reiciendis et exercitationem, obcaecati
         assumenda modi voluptates deleniti iusto repellat!
       </p>
-      <a class="btn feature__btn" href="#">More information</a>
+      <a class="btn features__btn" href="/training">More information<i class="features__btn-arrow icofont-long-arrow-right"></i
+        ></a>
     </div>
-    <div class="feature__item">
-      <i class="icon icofont-calculations"></i>
-      <h3 class="feature__heading">Course 2</h3>
-      <p class="feature__text">
+    <div class="features__item">
+      <img class="features__logo features__logo-cpcs" src="/img/cpcs-logo.png" alt="cpcs-logo" />
+      <h3 class="features__heading">CPCS Scheme</h3>
+      <p class="features__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
         dolores id omnis officiis reiciendis et exercitationem, obcaecati
         assumenda modi voluptates deleniti iusto repellat!
       </p>
-      <a class="btn feature__btn" href="#">More information</a>
-    </div>
-    <div class="feature__item">
-      <i class="icon icofont-calculations"></i>
-      <h3 class="feature__heading">Course 3</h3>
-      <p class="feature__text">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
-        dolores id omnis officiis reiciendis et exercitationem, obcaecati
-        assumenda modi voluptates deleniti iusto repellat!
-      </p>
-      <a class="btn feature__btn" href="#">More information</a>
+      <a class="btn features__btn" href="/training">More information<i class="features__btn-arrow icofont-long-arrow-right"></i
+        ></a>
     </div>
   </div>
 </section>
 
 <section class="contact">
   <!-- <h2 class="contact__title">Say hi, I'm lonely...</h2> -->
-  <a class="btn contact__btn" href="/contact">Get in touch<i class="icofont-long-arrow-right"></i></a>
+  <a class="btn contact__btn" href="/contact"
+    >Get in touch<i class="contact__btn-arrow icofont-long-arrow-right"></i
+  ></a>
 </section>
 
 <%- include("partials/scripts") -%> <%- include("partials/footer") -%>
