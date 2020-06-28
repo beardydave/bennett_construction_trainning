@@ -3,7 +3,6 @@ const ejs = require("ejs");
 const port = 3000;
 
 // --- Page Title --- //
-const homeTitle = "";
 const trainingTitle = "Training";
 const aboutTitle = "About";
 const contactTitle = "Contact";
@@ -15,9 +14,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("home", {
-    pageTitle: homeTitle,
-  });
+  res.render("home");
 });
 
 app.get("/training", (req, res) => {

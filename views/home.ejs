@@ -1,6 +1,20 @@
-<%- include("partials/header") -%> <%- include("partials/nav") -%> <%-
-include("partials/title") -%>
+<%- include("partials/header") -%> <%- include("partials/nav") -%>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__title-section">
+    <!-- <img class="hero__logo" src="/img/abTraining-logo.png" alt="" /> -->
+    <h1 class="hero__title-home">AB</h1>
+    <h2 class="hero__page-title">Plant Operator and Construction Training</h2>
+    <a class="btn btn-main" href="/contact"
+      ><span>Get in touch</span><i class="icofont-touch"></i
+    ></a>
+  </div>
 
+  <div class="hero__filter-color"></div>
+  <img class="hero__image" src="/img/construction-hero3.jpg" alt="hero-image" />
+</section>
+
+<!-- FEATURE COURSES -->
 <section class="features">
   <h2 class="features__title">On-site Training Courses</h2>
   <p class="features__subtitle">
@@ -8,35 +22,38 @@ include("partials/title") -%>
   </p>
   <div class="features__container">
     <div class="features__item">
-      <img class="features__logo features__logo-npors" src="/img/npors-logo.png" alt="npors-logo" />
+      <img
+        class="features__logo features__logo-npors"
+        src="/img/npors-logo.png"
+        alt="npors-logo"
+      />
       <h3 class="features__heading">NPORS Scheme</h3>
       <p class="features__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
         dolores id omnis officiis reiciendis et exercitationem, obcaecati
         assumenda modi voluptates deleniti iusto repellat!
       </p>
-      <a class="btn features__btn" href="/training">More information<i class="features__btn-arrow icofont-long-arrow-right"></i
-        ></a>
+      <a class="btn btn-feature" href="/training"
+        ><span>More information</span><i class="icofont-long-arrow-right"></i
+      ></a>
     </div>
     <div class="features__item">
-      <img class="features__logo features__logo-cpcs" src="/img/cpcs-logo.png" alt="cpcs-logo" />
+      <img
+        class="features__logo features__logo-cpcs"
+        src="/img/cpcs-logo.png"
+        alt="cpcs-logo"
+      />
       <h3 class="features__heading">CPCS Scheme</h3>
       <p class="features__text">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus
         dolores id omnis officiis reiciendis et exercitationem, obcaecati
         assumenda modi voluptates deleniti iusto repellat!
       </p>
-      <a class="btn features__btn" href="/training">More information<i class="features__btn-arrow icofont-long-arrow-right"></i
-        ></a>
+      <a class="btn btn-feature" href="/training"
+        ><span>More information</span><i class="icofont-long-arrow-right"></i
+      ></a>
     </div>
   </div>
-</section>
-
-<section class="contact">
-  <!-- <h2 class="contact__title">Say hi, I'm lonely...</h2> -->
-  <a class="btn contact__btn" href="/contact"
-    >Get in touch<i class="contact__btn-arrow icofont-long-arrow-right"></i
-  ></a>
 </section>
 
 <%- include("partials/scripts") -%> <%- include("partials/footer") -%>

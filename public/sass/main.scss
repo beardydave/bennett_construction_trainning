@@ -15,10 +15,13 @@ body {
 
 @import "base/utilities";
 
+@import "components/buttons";
+@import "components/footer";
+@import "components/nav";
+@import "components/hero";
+
 @import "pages/home";
 @import "pages/training";
 @import "pages/about";
 @import "pages/contact";
 
-@import "components/nav";
-@import "components/title";

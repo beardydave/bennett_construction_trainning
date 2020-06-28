@@ -1,0 +1,36 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.2rem 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+.btn-main {
+  width: 20rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b6978;
+  background-color: #eee;
+
+  .icofont-touch {
+    font-size: 2.8rem;
+  }
+}
+
+.btn-feature {
+  background-color: #3b6978;
+  color: #fff;
+  font-size: 1.6rem;
+
+  .icofont-long-arrow-right {
+    font-size: 2rem;
+  }
+}

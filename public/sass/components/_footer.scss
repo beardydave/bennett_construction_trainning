@@ -1,0 +1,40 @@
+.footer {
+  padding: 3rem;
+  height: 30vh;
+  background-color: #3b6978;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icofont {
+      font-size: 3rem;
+    }
+    .icofont:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__text {
+      margin: 0;
+    }
+  }
+}
