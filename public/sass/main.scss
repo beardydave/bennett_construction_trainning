@@ -11,6 +11,7 @@ body {
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
     color: #222831;
+    background-color: #eee;
 }
 
 @import "base/utilities";
@@ -19,6 +20,7 @@ body {
 @import "components/footer";
 @import "components/nav";
 @import "components/hero";
+@import "components/photo-collage";
 
 @import "pages/home";
 @import "pages/training";

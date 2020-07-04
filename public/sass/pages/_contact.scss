@@ -1,6 +1,37 @@
-.contact-card {
-    background-color: #eee;
-    padding: 3rem;
-    margin: 3rem auto;
-    width: 50vw;
+.contact {
+    &__card {
+        background-color: #fff;
+        padding: 3rem;
+        margin: 3rem auto;
+        width: 90vw;
+        border-radius: 1rem;
+    }
+
+    &__form {
+        
+    }
+
+    &__input {
+        width: 90%;
+        outline: none;
+        border: none;
+        padding: 1rem;
+        border-bottom: solid .2rem #eee;
+        &:focus {
+            border-bottom: solid .2rem #3b6978;
+            &:invalid {
+                border-bottom: solid .2rem red;
+            }
+        }
+    }
+
+    &__message {
+        font-family:  'Roboto', sans-serif;
+    }
 }
+
+@media(min-width: 600px) {
+    .contact__card {
+        width: 50vw;
+    }
+  }

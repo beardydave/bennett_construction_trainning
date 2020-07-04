@@ -1,12 +1,55 @@
-<%- include("partials/header") -%> <%- include("partials/nav") -%>
-<%- include("partials/hero") -%>
+<%- include("partials/header") -%> <%- include("partials/nav") -%> <%-
+include("partials/hero") -%>
 
-<div class="contact-card">
-  <form action="">
-    <label for="name">Your name</label><input class="contact-input" id="name" type="text" />
-    <label for="email">Your email</label><input class="contact-input" id="email" type="email" /></br>
-    <label for="message">Your message</label><input class="contact-input" id="message" type="text" /></br>
-    <button class="btn-send">Send Message</button>
+<div class="contact__card">
+  <h2 class="contact__title margin__bottom-medium">Please fill out the form below and I'll get back to you asap.</h2>
+  <form class="contact__form" action="/">
+    
+    <div class="contact__form-item margin__bottom-medium">
+      <input
+        class="contact__input contact__name"
+        id="name"
+        type="text"
+        placeholder="Name"
+        required
+      />
+      <!-- <label for="name">Name</label> -->
+    </div>
+
+    <div class="contact__form-item margin__bottom-medium">
+      <input
+        class="contact__input contact__email"
+        id="email"
+        type="email"
+        placeholder="Email"
+        required
+      />
+      <!-- <label for="email">Email</label> -->
+    </div>
+
+    <div class="contact__form-item margin__bottom-medium">
+      <input
+        class="contact__input contact__subject"
+        id="subject"
+        type="text"
+        placeholder="Subject"
+      />
+      <!-- <label for="subject">Subject</label> -->
+    </div>
+
+    <div class="contact__form-item margin__bottom-medium">
+      <textarea
+        class="contact__input contact__message"
+        id="message"
+        type="text"
+        placeholder="Message"
+        rows="4"
+        required
+      ></textarea>
+      <!-- <label for="message">Message</label> -->
+    </div>
+
+    <button class="btn btn-send-message">Send Message</button>
   </form>
 </div>
 

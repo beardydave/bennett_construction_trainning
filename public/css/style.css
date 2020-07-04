@@ -12,10 +12,19 @@ body {
   padding: 1rem;
   font-family: "Roboto", sans-serif;
   color: #222831;
+  background-color: #eee;
 }
 
-.margin-bottom {
+.margin__bottom-small {
+  margin-bottom: 1rem;
+}
+
+.margin__bottom-medium {
   margin-bottom: 3rem;
+}
+
+.margin__bottom-large {
+  margin-bottom: 5rem;
 }
 
 .btn {
@@ -30,6 +39,9 @@ body {
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  transform: translateY(0);
 }
 
 .btn-main {
@@ -48,8 +60,19 @@ body {
   color: #fff;
   font-size: 1.6rem;
 }
-.btn-feature .icofont-long-arrow-right {
-  font-size: 2rem;
+.btn-feature .icofont-circled-right {
+  font-size: 1.5rem;
+  margin-left: 0.8rem;
+  transform: translateY(1px);
+}
+
+.btn-send-message {
+  outline: none;
+  border: none;
+  background-color: #3b6978;
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 0 auto;
 }
 
 .footer {
@@ -60,7 +83,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: white;
+  color: #fff;
+}
+.footer__link {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.footer__link:hover {
+  border-bottom: solid 0.1rem #fff;
 }
 .footer__text {
   font-size: 1.6rem;
@@ -267,6 +298,9 @@ body {
   width: 17rem;
   margin-bottom: 4rem;
 }
+.hero .icofont-vehicle-excavator {
+  font-size: 2.5rem;
+}
 
 @media (min-width: 900px) {
   .hero__logo {
@@ -279,9 +313,35 @@ body {
     font-size: 4rem;
   }
 }
+.photo__section {
+  padding: 2rem;
+  text-align: center;
+}
+.photo__container {
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 80%;
+  column-count: 1;
+  column-gap: 0.3rem;
+}
+.photo__item {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .photo__container {
+    column-count: 2;
+  }
+}
+@media (min-width: 1000px) {
+  .photo__container {
+    column-count: 3;
+  }
+}
 .features {
   padding: 2rem 0;
   text-align: center;
+  margin-bottom: 5rem;
 }
 .features__title {
   font-size: 3rem;
@@ -301,7 +361,7 @@ body {
   height: 40rem;
   padding: 2rem;
   width: 90vw;
-  background-color: #eee;
+  background-color: #fff;
   margin: 2rem 0;
   border-radius: 1rem;
   display: flex;
@@ -357,11 +417,34 @@ body {
   margin: 0 auto;
 }
 
-.contact-card {
-  background-color: #eee;
+.contact__card {
+  background-color: #fff;
   padding: 3rem;
   margin: 3rem auto;
-  width: 50vw;
+  width: 90vw;
+  border-radius: 1rem;
+}
+.contact__input {
+  width: 90%;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  border-bottom: solid 0.2rem #eee;
+}
+.contact__input:focus {
+  border-bottom: solid 0.2rem #3b6978;
+}
+.contact__input:focus:invalid {
+  border-bottom: solid 0.2rem red;
+}
+.contact__message {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 600px) {
+  .contact__card {
+    width: 50vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

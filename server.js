@@ -5,7 +5,7 @@ const port = 3000;
 // --- Page Title --- //
 const trainingTitle = "Training";
 const aboutTitle = "About";
-const contactTitle = "Contact";
+const contactTitle = "Message Me";
 
 const app = express();
 
