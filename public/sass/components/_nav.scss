@@ -36,8 +36,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1500;
+    z-index: -1500;
     transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
   }
   &__list {
     transform: translateY(-5rem);
@@ -76,6 +77,7 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100vw;
+    z-index: 1500;
   }
 
   &__icon {
